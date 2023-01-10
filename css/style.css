@@ -43,7 +43,6 @@ body{
 .wrapper{
 	width: 1200px;
 	margin: 0 auto;
-	max-width: 100vh;
 }
 h1{
 	font-size: 40px;
