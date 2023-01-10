@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+h1{
+	font-size: 40px;
+	font-family: fantasy;
+	color: #1b8281;
+	background: #ffb900;
+	padding: 10px 50px;
+	text-transform: uppercase;
+	border: solid 2px #40464b;
+    border-bottom: none;
+    border-radius: 40px 40px 0 0;
+}
+.book-window{
+	border: solid 2px #40464b;
+	border-top: none;
+	border-radius: 0 0 40px 40px;
+}
+.table{
+	display: grid;
+	grid-template-columns: 1fr 1fr 5fr;
+}
+.header{
+	position: sticky;
+	top: 0;
+	z-index: 15;
+}
+.header>div{
+	font-size: 20px;
+	font-family: fantasy;
+	text-transform: uppercase;
+	color: #F9F9A7;
+	background: #40464b;
+	text-align: right;
+	padding: 5px 21px;
+}
+.header>div:last-child{
+	text-align: center;
+}
+.date{
+	background: #1b8281;
+	padding-left: 50px;
+	border-bottom: solid 2px #40464b;
+	position: sticky;
+	top: 33px;
+	z-index: 10;
+	border-top: solid 2px #40464b;
+}
+.date>span{
+	font-family: fantasy;
+	text-transform: uppercase;
+	color: #ffb900;
+}
+.date>span:first-child{
+	font-size: 35px;
+}
+.date>span:last-child{
+	font-size: 25px;
+	vertical-align: super;
+	text-decoration: underline;
+}
+.value>div{
+	padding: 20px;
+	text-align: right;
+	border-right: solid 2px #40464b;
+}
+.value>div:last-child{
+	border-right: none;
+	padding: 5px 20px 10px;
+	text-align: left;
+}
+.value>div>p{
+	font-size: 20px;
+	font-family: fantasy;
+	color: #40464b;
+	position: sticky;
+    top: 90px;
+    z-index: 5;
+}
+.value>div:last-child>p{
+	font-size: 16px;
+	position: static;
+	font-family: sans-serif;
+}
